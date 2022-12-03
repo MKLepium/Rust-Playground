@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="utf-8">
+    <title>Game Of Life!</title>
+</head>
+
+<body onload="init()">
+    <h1>Conway's Game of Life</h1>
+    <div id=div>
+        <div id="div1">
+            <a id="startButton" href="#" class="button" onclick="start()">Start</a>
+            <a id="advanceButton" href="#" class="button" onclick="Advance()">Advance</a>
+            <div>
+                <p id="generations">Generations: 0</p>
+                <p id="liveCells">Live Cells: 0</p>
+            </div>
+        </div>
+        <div id="div2">
+            <a href="#" class="button" onclick="reset()">Clear</a>
+            <a href="#" class="button" onclick="randomize()">Randomize</a>
+            <a href="#" class="button" onclick="newBoard()">Create new Field</a>
+        </div>
+        <div id=game></div>
+    </div>
+</body>
+
+</html>
